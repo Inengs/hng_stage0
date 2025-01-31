@@ -1,0 +1,14 @@
+{
+  "name": "hng_stage0",
+  "version": "1.0.0",
+  "description": "project for hng internship",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
