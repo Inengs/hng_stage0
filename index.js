@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/details', (req, res) => {
     try {
         const email = 'inengiyeemmanuel@gmail.com';
         const dateandTimeNow = new Date().toISOString();
