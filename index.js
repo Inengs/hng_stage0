@@ -15,8 +15,8 @@ app.get('/', (req, res) => {
 
         const response = {
             email: email,
-            currenDateTime: dateandTimeNow,
-            githubUrl: githubRepo,
+            current_datetime: dateandTimeNow,
+            github_url: githubRepo,
         }
 
         res.status(200).json(response);
