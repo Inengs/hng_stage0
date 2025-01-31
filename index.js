@@ -5,7 +5,6 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
-
 app.use(cors());
 
 app.get('/details', (req, res) => {
@@ -16,13 +15,13 @@ app.get('/details', (req, res) => {
 
         const response = {
             email: email,
-            currentTime: dateandTimeNow,
-            githubRepo: githubRepo,
+            currenDateTime: dateandTimeNow,
+            githubUrl: githubRepo,
         }
 
         res.status(200).json(response);
     } catch (err) {
-        res.status(401).json({ error: "task failed" })
+        res.status(500).json({ error: "task failed" })
     }
 })
 
